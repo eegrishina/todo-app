@@ -7,7 +7,7 @@ interface TodoListProps {
 
 export default function TodoList({ list, onToggle }: TodoListProps) {
     return (
-        <ul className="divide-y divide-gray-200">
+        <ul className="divide-y divide-gray-200 border-y border-gray-200">
             {list.map((todo) => (
                 <li
                     key={todo.id}
@@ -21,7 +21,7 @@ export default function TodoList({ list, onToggle }: TodoListProps) {
                             className="sr-only"
                         />
                         <span
-                            className={`w-7 h-7 flex items-center justify-center rounded-full border-2 transition 
+                            className={`min-w-7 min-h-7 rounded-full border-2 transition 
                                 ${todo.completed ? "border-green-700" : "border-gray-400"}`}
                         >
                             {todo.completed && (
@@ -39,7 +39,7 @@ export default function TodoList({ list, onToggle }: TodoListProps) {
                             )}
                         </span>
                         <span
-                            className={`text-2xl font-light 
+                            className={`text-2xl font-light break-words
                                 ${todo.completed ? "line-through text-gray-300" : "text-gray-600"}`}
                         >
                             {todo.text}
