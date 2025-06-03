@@ -2,11 +2,15 @@
 
 ToDo-приложение, позволяющее управлять текущим списком дел.
 
+**[Демо приложения](https://eegrishina.github.io/todo-app/)**
+
 ## Стек
 
 **TypeScript, React, React Hooks**
 
-TailwindCSS, ключевая функциональность покрыта тестами
+TailwindCSS
+
+Vite, Testing Library, vitest
 
 ## Основной интерфейс
 
