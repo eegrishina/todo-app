@@ -21,6 +21,7 @@ export default function AddToto({ onAdd }: AddTodoProps) {
 
     return (
         <input
+            className="bg-white w-full text-2xl font-light p-4 italic placeholder-gray-300"
             type="text"
             value={text}
             placeholder="What needs to be done?"

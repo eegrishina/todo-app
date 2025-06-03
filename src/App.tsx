@@ -16,8 +16,10 @@ function App() {
 
     return (
         <div>
-            <h1>todos</h1>
-            <AddTodo onAdd={handleAddTodo} />
+            <h1 className="text-[100px] text-rose-800 font-light text-center opacity-18">todos</h1>
+            <div className="mx-auto max-w-xl shadow-md mt-10 bg-white">
+                <AddTodo onAdd={handleAddTodo} />
+            </div>
         </div>
     )
 }
