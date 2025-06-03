@@ -24,7 +24,7 @@ function App() {
     return (
         <div>
             <h1 className="text-[100px] text-rose-800 font-light text-center opacity-18">todos</h1>
-            <div className="mx-auto max-w-xl shadow-md mt-10 bg-white">
+            <div className="mx-auto max-w-xl shadow-md mt-3 bg-white">
                 <AddTodo onAdd={handleAddTodo} />
                 <TodoList list={todos} onToggle={handleToggle} />
             </div>
