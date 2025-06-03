@@ -41,12 +41,14 @@ function App() {
             <div className="mx-auto max-w-xl shadow-md mt-3 bg-white">
                 <AddTodo onAdd={handleAddTodo} />
                 <TodoList list={filteredTodos} onToggle={handleToggle} />
-                <TodoOptions
-                    incompleted={incompletedTodos.length}
-                    currentFilter={filter}
-                    onChangeFilter={setFilter}
-                    onClear={handleClear}
-                />
+                {todos.length > 0 &&
+                    <TodoOptions
+                        incompleted={incompletedTodos.length}
+                        currentFilter={filter}
+                        onChangeFilter={setFilter}
+                        onClear={handleClear}
+                    />
+                }
             </div>
         </div>
     )
